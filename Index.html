@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steel Airline</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a class="brand" href="#">Steel Airline</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="primaryNav">
+        <a href="about.html">About Us</a>
+        <a href="#book">Book</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#experience">Experience</a>
+        <a href="#deals">Deals</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="nav-cta">Sign in</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Steel Airline hero">
+      <div class="hero-media">
+        <div class="hero-slider" aria-live="polite">
+          <img class="hero-slide active" src="images/hero.jpg" alt="Airplane wing above the clouds">
+          <img class="hero-slide" src="images/terminal.jpg" alt="Airport terminal with escalators">
+          <img class="hero-slide" src="images/lounge.jpg" alt="Airport interior with seating and warm lighting">
+          <img class="hero-slide" src="images/cabin.jpg" alt="Airplane cabin interior">
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Global routes. Calm travel.</p>
+        <h1>Fly modern, arrive refreshed.</h1>
+        <p class="hero-sub">Direct flights across continents with premium service, smart pricing, and seamless connections.</p>
+        <div class="hero-actions">
+          <button class="primary">Book a flight</button>
+          <button class="secondary">Check flight status</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat">190+</span>
+            <span class="label">Destinations</span>
+          </div>
+          <div>
+            <span class="stat">98%</span>
+            <span class="label">On-time rate</span>
+          </div>
+          <div>
+            <span class="stat">24/7</span>
+            <span class="label">Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="booking">
+      <div class="section-head">
+        <h2>Plan your trip</h2>
+        <p>Choose a route, set your dates, and get instant pricing.</p>
+      </div>
+      <form class="booking-form">
+        <div class="field">
+          <label>From</label>
+          <input type="text" placeholder="Los Angeles (LAX)">
+        </div>
+        <div class="field">
+          <label>To</label>
+          <input type="text" placeholder="Tokyo (HND)">
+        </div>
+        <div class="field">
+          <label>Depart</label>
+          <input type="date">
+        </div>
+        <div class="field">
+          <label>Return</label>
+          <input type="date">
+        </div>
+        <div class="field">
+          <label>Passengers</label>
+          <select>
+            <option>1 Adult</option>
+            <option>2 Adults</option>
+            <option>3 Adults</option>
+            <option>4 Adults</option>
+          </select>
+        </div>
+        <button class="primary" type="button">Search flights</button>
+      </form>
+    </section>
+
+    <section id="destinations" class="destinations">
+      <div class="section-head">
+        <h2>Top destinations</h2>
+        <p>Curated routes with the best connections and seasonal offers.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/city.jpg" alt="City skyline at dusk">
+          <div class="card-body">
+            <h3>New York</h3>
+            <p>Nonstop from 30+ cities, premium lounges included.</p>
+            <span class="price">From ₦420,000</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/terminal.jpg" alt="Airport terminal with escalators">
+          <div class="card-body">
+            <h3>Singapore</h3>
+            <p>Seamless transfers, curated airport experiences.</p>
+            <span class="price">From ₦690,000</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/lounge.jpg" alt="Airport interior with seating and warm lighting">
+          <div class="card-body">
+            <h3>Barcelona</h3>
+            <p>Weekly specials with flexible change options.</p>
+            <span class="price">From ₦380,000</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="deals" class="deals">
+      <div class="section-head">
+        <h2>Live fare alerts</h2>
+        <p>Get notified when prices drop for your favorite routes.</p>
+      </div>
+      <div class="deals-panel">
+        <div>
+          <h3>Save up to 30% on spring routes</h3>
+          <p>Opt in to deal alerts and lock flexible fares for your next getaway.</p>
+        </div>
+        <form class="deal-form">
+          <input type="email" placeholder="Email address">
+          <button class="primary" type="button">Notify me</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Steel Airline</h4>
+        <p>Safe, modern air travel built around your time and comfort.</p>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <p>Help center</p>
+        <p>Manage booking</p>
+        <p>Accessibility</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <p>About us</p>
+        <p>Careers</p>
+        <p>Press</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>+1 (800) 555-0144</p>
+        <p>support@steelairline.com</p>
+      </div>
+    </div>
+    <p class="footer-bottom">2026 Steel Airline. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
